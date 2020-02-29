@@ -48,6 +48,7 @@ done
 sudo chown -R pi:pi /save
 
 # Setup silent MP3 to fix "whine" sound in Emulation Station
+sudo __nodialog=1 /home/pi/RetroPie-Setup/retropie_packages.sh autostart enable
 mkdir /home/pi/bgm && cd /home/pi/bgm
 wget http://duramecho.com/Misc/SilentCd/Silence32min.mp3.zip
 unzip Silence32min.mp3.zip && rm Silence32min.mp3.zip
